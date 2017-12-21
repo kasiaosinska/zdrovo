@@ -447,6 +447,30 @@ table {
     color: #fff;
 }
 
+.social-box > p a:hover {
+    text-decoration: none;
+}
+
+.social-box > p .icon {
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 12px;
+}
+
+.social-box > p a:first-child .icon {
+    margin-left: 24px;
+}
+
+.social-box > p .icon i {
+    color: #94b8d8
+}
+
 
 .footer-list {
     list-style-type: none;
