@@ -95,6 +95,15 @@ table {
     border-color: transparent;
 }
 
+.navbar-header .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+.icon-menu a {
+    padding: 0 !important;
+}
+
 .icon-menu > a:hover {
     text-decoration: none;
 }
@@ -142,7 +151,7 @@ table {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: #fff;
     }
     .navbar-white .menu-wrapper {
         border-color: transparent;
@@ -392,18 +401,8 @@ table {
         font-size: 24px;
         max-width: 250px;
         position: absolute;
-        top: 70px;
-        left: 65px;
-    }
-}
-
-@media (max-width: 700px) {
-    .show-on-mobile {
-        display: none;
-
-    }
-    .show-on-mobile > p {
-        display: none;
+        top: 88px;
+        left: 50px;
     }
 }
 
@@ -496,7 +495,10 @@ table {
 }
 
 @media (max-width: 768px) {
-
+    .social-box > p .actions {
+        display: block;
+        margin-top: 36px;
+    }
 }
 
 .footer-list {
