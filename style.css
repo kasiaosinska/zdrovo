@@ -84,6 +84,7 @@ table {
     padding: 0 13px;
     font-family: "VOGUE Normal";
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .menu > li > a > img {
@@ -94,9 +95,32 @@ table {
     border-color: transparent;
 }
 
+.icon-menu > a:hover {
+    text-decoration: none;
+}
+
+.icon-menu > a > .icon {
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-menu > a .icon i {
+    color: #fff;
+}
+
 @media (max-width: 1200px) {
     .menu > li > a {
         font-size: 14px;
+    }
+    .icon-menu > a > .icon {
+        width: 25px;
+        height: 25px;
     }
 }
 
@@ -354,7 +378,7 @@ table {
     }
     .show-on-mobile {
         display: block;
-        width: 400px;
+        width: 350px;
         height: 350px;
         background-color: #feab29;
         border-radius: 50%;
@@ -368,8 +392,8 @@ table {
         font-size: 24px;
         max-width: 250px;
         position: absolute;
-        top: 45px;
-        left: 75px;
+        top: 70px;
+        left: 65px;
     }
 }
 
@@ -471,6 +495,9 @@ table {
     color: #94b8d8
 }
 
+@media (max-width: 768px) {
+
+}
 
 .footer-list {
     list-style-type: none;
