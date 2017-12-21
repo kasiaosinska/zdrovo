@@ -1,0 +1,388 @@
+@font-face {
+    font-family: "VOGUE Bold";
+    src: url("./fonts/VOGUEB.TTF");
+}
+
+@font-face {
+    font-family: "VOGUE Normal";
+    src: url("./fonts/VOGUEN.TTF");
+}
+
+@font-face {
+    font-family: "VOGUEPL Bold";
+    src: url("./fonts/152.TTF");
+}
+
+@font-face {
+    font-family: "VOGUEPL Normal";
+    src: url("./fonts/151.TTF");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.home-section {
+    background: url("./img/header.png") no-repeat center;
+    height: 625px;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 225px;
+}
+
+@media (max-width: 400px) {
+    .logo {
+        width: 80%;
+    }
+}
+
+.boxes-section {
+    margin: 15px 0;
+}
+
+.box-wrapper > h3 {
+    font-family: "VOGUE Normal";
+    font-size: 24px;
+}
+
+.box-wrapper > h5 {
+    margin-top: 20px;
+    font-family: "VOGUE Normal";
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.box-wrapper > h2 {
+    margin-top: 120px;
+    font-family:"VOGUE Normal";
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.box-wrapper-first {
+    margin-right: 15px;
+}
+
+.box-wrapper-second {
+    margin: 0 7.5px;
+}
+
+.box-wrapper-third {
+    margin-left: 15px;
+}
+
+.first-box {
+    background: url("./img/Layer 9.png") no-repeat center;
+    background-size: cover;
+    height: 170px;
+    width: 100%;
+}
+
+.second-box {
+    background: url("./img/Layer 10.png") no-repeat center;
+    background-size: cover;
+    height: 170px;
+    width: 100%;
+}
+
+.third-box {
+    background: url("./img/Layer 8.png") no-repeat center;
+    background-size: cover;
+    height: 170px;
+    width: 100%;
+}
+
+.arrow-wrapper {
+    height: 20px;
+    text-align: center;
+    margin: 150px 0 30px 0;
+}
+
+@media (max-width: 768px) {
+    .box-wrapper-first {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .box-wrapper-second {
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+.about-section {
+    height: 1100px;
+    background: url("./img/about-section.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.logo-about {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.about-section > .logo-desktop {
+    display: inline-block;
+}
+.about-section > .logo-mobile {
+    display: none;
+}
+
+.about-section > p {
+    font-family: "VOGUE Normal";
+    font-size: 16px;
+    line-height: 22px;
+    margin: 20px 20%;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        height: 900px;
+        background: url("./img/Layer 11-mobile.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .about-section > .logo-desktop {
+        display: none;
+    }
+    .about-section > .logo-mobile {
+        display: inline-block;
+    }
+    .about-section > p {
+        margin: 40px 20%;
+    }
+}
+
+.img-section {
+    text-align: center;
+}
+
+.img-section > .img-box {
+    background: url("./img/Layer 15.png") no-repeat center;
+    background-size: contain;
+    height: 550px;
+}
+
+.about-eggs-section {
+    background: url("./img/layer.png") no-repeat center;
+    background-size: cover;
+    height: 1600px;
+}
+
+.about-eggs-wrapper {
+    margin-top: 40px;
+}
+
+.about-eggs-box-wrapper {
+    padding-right: 25px;
+}
+
+.small-box-wrapper {
+    margin: 60px 0 0 0;
+    text-align: center;
+}
+
+.yellow {
+    font-family: "VOGUE Bold";
+    font-size: 35px;
+    color: #feab29;
+    margin-bottom: -10px;
+}
+
+.pink {
+    font-family: "VOGUE Bold";
+    font-size: 35px;
+    color: #efba98;
+    margin-bottom: -10px;
+}
+
+.brown {
+    font-family: "VOGUE Bold";
+    font-size: 35px;
+    color: #ae997e;
+    margin-bottom: -10px;
+}
+
+.box-wrapper-bottom {
+    margin-top: 320px;
+    margin-left: 60px;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .box-wrapper-bottom {
+        margin-top: 120px;
+        margin-left: 0;
+    }
+    .about-eggs-box-wrapper {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-eggs-section {
+        background: url("./img/eggs-box.png") no-repeat center;
+        background-size: cover;
+        height: 1600px;
+    }
+    .small-box-wrapper {
+        margin-top: 30px;
+    }
+    .box-wrapper-bottom {
+        margin-top: 190px;
+        margin-left: 0;
+        padding: 0 33%;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .show-on-mobile {
+        display: block;
+        width: 400px;
+        height: 350px;
+        background-color: #feab29;
+        border-radius: 50%;
+        margin-top: 200px;
+        margin-left: 60px;
+        text-align: left;
+        position: relative;
+    }
+    .show-on-mobile > p {
+        font-family: "VOGUE Normal";
+        font-size: 24px;
+        max-width: 250px;
+        position: absolute;
+        top: 45px;
+        left: 75px;
+    }
+}
+
+@media (max-width: 700px) {
+    .show-on-mobile {
+        display: none;
+
+    }
+    .show-on-mobile > p {
+        display: none;
+    }
+}
+
+.contact-section {
+    height: 1000px;
+    background: url("./img/egg.png") no-repeat center;
+    background-color: #94b8d8;
+}
+
+.text-box {
+    text-align: center;
+}
+
+.text-big {
+    font-family: "VOGUE Normal";
+    font-size: 24px;
+    padding-top: 390px;
+}
+
+.text-small {
+    font-family: "VOGUE Normal";
+    font-size: 16px;
+}
+
+.text-small > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-box {
+    padding-top: 220px;
+    text-align: center;
+}
+
+.social-box > p {
+    font-family: "VOGUE Normal";
+    font-size: 24px;
+    color: #fff;
+}
+
+
+.footer-list {
+    list-style-type: none;
+    text-align: right;
+}
+
+.footer-list > li {
+    display: inline-block;
+    font-family: "VOGUE Normal";
+    font-size: 12px;
+    margin: 20px 5px;
+}
+
+.footer-list > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-text {
+    font-family: "VOGUE Normal";
+    font-size: 12px;
+    margin: 20px 5px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        background-color:  #94b8d8;
+        padding-top: 200px;
+    }
+    .footer-text {
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+
