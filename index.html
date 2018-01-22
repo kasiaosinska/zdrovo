@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
     <title>Zdrovo</title>
+
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/font-awesome/font-awesome.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar-default">
+    <nav class="navbar navbar-default navbar-white">
         <div class="container">
 
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed button" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -22,22 +24,36 @@
                 </button>
             </div>
 
-
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="nav navbar-nav">
+            <div class="collapse navbar-collapse menu-wrapper" id="menu">
+                <ul class="menu">
                     <li><a href="#">Strona główna</a></li>
                     <li><a href="#">Aktualności</a></li>
                     <li><a href="#">O producencie</a></li>
                     <li><a href="#">O produkcie</a></li>
                     <li><a href="#">Ciekawostki o jajach</a></li>
                     <li><a href="#">Kontakt</a></li>
-                    <li><a href="#"><img src="img/fb-header.png"></a></li>
-                    <li><a href="#"><img src="img/ins-header.png"></a></li>
+                    <li class="icon-menu"><a href="#">
+                        <span class="icon">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </span>
+                    </a></li>
+                    <li class="icon-menu"><a href="#">
+                        <span class="icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </span>
+                    </a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <section class="home-section">
+        <ul class="slides">
+            <li class="slide slide-1 showing"></li>
+            <li class="slide slide-2"></li>
+            <li class="slide slide-3"></li>
+            <li class="slide slide-4"></li>
+            <li class="slide slide-5"></li>
+        </ul>
         <img class="logo" src="./img/Layer%204.png" alt="logo">
     </section>
     <div class="container boxes-section">
@@ -118,9 +134,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4"></div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-sm-8">
+                    <div class="row eggs-links">
+                        <div class="col-xs-12 hidden-sm hidden-md hidden-lg box-wrapper box-wrapper-bottom">
+                            <h3>Co wiemy o jajach?</h3>
+                            <h5>Codziennie używane jako składnik wielu posiłków, nieodłączny element śniadania czy tradycyjnego wypieku, naturalna kapsuła pełna zdrowych życiodajnych składników. Co naprawdę wiemy o jajach?</h5>
+                        </div>
+                        <a href="#" class="col-xs-4 eggs-link-wrapper"></a>
+                        <a href="#" class="col-xs-4 eggs-link-wrapper"></a>
+                        <a href="#" class="col-xs-4 eggs-link-wrapper"></a>
+                        <a href="#" class="col-xs-4 eggs-link-wrapper"></a>
+                        <a href="#" class="col-xs-4 eggs-link-wrapper"></a>
+                        <a href="#" class="col-xs-4 eggs-link-wrapper"></a>
+                        <div class="col-xs-12 hidden-sm hidden-md hidden-lg box-wrapper box-wrapper-bottom">
+                            <h2 class="hide-on-mobile">Jajo składa się tylko z 10% z tłuszczów, z czego zaledwie 0,4% to cholesterol, wpływający pozytywnie na funkcjonowanie naszego organizmu.</h2>
+                            <div class="show-on-mobile"><p>Jajo składa się tylko z 10% z tłuszczów, z czego zaledwie 0,4% to cholesterol, wpływający pozytywnie na funkcjonowanie naszego organizmu.</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-4">
                     <div class="box-wrapper box-wrapper-bottom">
                         <h3>Co wiemy o jajach?</h3>
                         <h5>Codziennie używane jako składnik wielu posiłków, nieodłączny element śniadania czy tradycyjnego wypieku, naturalna kapsuła pełna zdrowych życiodajnych składników. Co naprawdę wiemy o jajach?</h5>
@@ -135,15 +167,24 @@
     <section class="contact-section">
         <div class="box-wrapper">
             <div class="text-box">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
                 <p class="text-big">Skontaktuj się z nami!</p>
                 <p class="text-small">Infolinia: +74 845 22 25</p>
                 <p class="text-small"><a href="mailto:info@zdrowo.pl">Email: info@zdrowo.pl</a></p>
             </div>
             <div class="social-box">
-                <p>Znajdź nasz także tutaj
-                    <a href="#"><img src="./img/fb.png" alt="fb"></a>
-                    <a href="#"><img src="./img/ins-contact.png" alt="ins"></a>
+                <p>Znajdź nas także tutaj
+                    <span class="actions">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </span>
                 </p>
             </div>
         </div>
@@ -168,7 +209,8 @@
             </div>
         </div>
     </footer>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./libs/bootstrap/bootstrap.min.js"></script>
+    <script src="./zdrovo.js"></script>
 </body>
 </html>
